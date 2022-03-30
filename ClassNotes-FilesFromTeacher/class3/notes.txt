@@ -1,0 +1,14 @@
+create 
+
+insert (Create)
+select (Read)
+update (Update)
+delete (Delete)
+
+CRUD
+normalization
+JOINS
+column/table aliases
+
+
+
