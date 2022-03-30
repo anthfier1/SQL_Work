@@ -1,0 +1,18 @@
+use world;
+
+select * from countrylanguage;
+
+-- are there any countries that doent have a language recorded in the database
+
+select c.Name, cl.Language from country c 
+left outer join countrylanguage cl on c.Code = cl.CountryCode
+where cl.Language is null;
+
+-- exists: returnd countries that have rows in the country lang table 
+select Name from country
+where exists (select * from  countrylanguage where CountryCode = country.Code);
+
+-- not exist: return countries that do not have rows in country lang table 
+-- equivilant to left outer join 
+select Name from country
+where not exists (select * from  countrylanguage where CountryCode = country.Code);
