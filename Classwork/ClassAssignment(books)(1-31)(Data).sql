@@ -1,0 +1,33 @@
+ use books; 
+INSERT INTO books.book (
+Author, 
+Title, 
+Subject, 
+Summary,
+ PublishedYear)
+VALUES (
+'Timothy Walker', 
+'Sailing to freedom', 
+'History',
+ 'In 1858, Mary Millburn successfully made her escape from Norfolk, Virginia, to Philadelphia aboard an express steamship. Millburns maritime route to freedom was far from uncommon. By the mid-nineteenth century, an increasing number of enslaved people had fled northward along the Atlantic seaboard.', 
+ '2021'),
+('John Gwynne', 
+'The shadow of the gods', 
+'Fiction',
+ 'This is the age of storm and murder. After the old gods warred and drove themselves to extinction, the cataclysm of their fall shattered the land of Vigrio. Now, power-hungry jarls carve out petty kingdoms, and monsters stalk the shadow-haunted woods and mountains.', 
+ '2021'),
+('Lisa Lutz', 
+'The accomplice', 
+'Fiction',
+ 'Owens wife was murdered. His best friend, Luna, found the body. Everything and everyone is thrown into question in this riveting suspense novel from the New York Times bestselling author of The Passenger. Owen is rich, charming, and chronically dissatisfied.', 
+ '2022'),
+('Walter Scott', 
+'Wendys revenge', 
+'Fiction',
+ 'In Wendys Revenge, Scotts titular heroine returns with a fresh set of awkward misadventures and messy nights out. When the book opens, aspiring artist Wendy has decided to move to the west coast to clear her head', 
+ '2016'),
+ ('Darcey Bell', 
+'All I Want', 
+'Fiction',
+ 'A young couple with a baby on the way moves to an old Victorian house in rural, upstate New York. Strange happenings contribute to their disintegrating marriage-and to their terrifying descent into the darker side of human nature', 
+ '2022');
